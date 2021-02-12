@@ -44,3 +44,10 @@ Note: your compiler might already be implementing some of these for you so don't
 | `x * 64`  | `x << 6`                                |
 | `x * 128` | `x << 7`                                |
 | `x * 256` | `x << 8`                                |
+
+# Swap values with only two variables
+```
+x ^= y
+y ^= x
+x ^= y
+```
