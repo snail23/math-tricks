@@ -32,3 +32,15 @@ Note: your compiler might already be implementing some of these for you so don't
 |           | c(x) = `round((1 / x) * 0x100000000)`   | Constant used for modulo tricks                  |
 | `x % y`   | `x & (y - 1)`                           | Powers of 2 only                                 |
 | `x % y`   | `x - (((x * c) >> 32) * y)`             | More useful for non-powers of 2                  |
+
+# Multiplication
+| Old       | New                                     |
+| --------- | --------------------------------------- |
+| `x * 2`   | `x << 1`                                |
+| `x * 4`   | `x << 2`                                |
+| `x * 8`   | `x << 3`                                |
+| `x * 16`  | `x << 4`                                |
+| `x * 32`  | `x << 5`                                |
+| `x * 64`  | `x << 6`                                |
+| `x * 128` | `x << 7`                                |
+| `x * 256` | `x << 8`                                |
