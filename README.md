@@ -3,6 +3,15 @@ Some common, some somewhat obscure. Maybe you'll learn something new and increas
 
 Note: your compiler might already be implementing some of these for you so don't panic if you don't see a performance increase.
 
+# General performance
+|                                                                                                 |
+| ----------------------------------------------------------------------------------------------- |
+| Be as simple as possible with your algorithm: let the compiler optimize your code for you       |
+| Avoid branching: use as little if statements or switches as possible                            |
+| Avoid variables: reuse existing variables as much as possible                                   |
+| Never use dynamic allocations: always use the stack                                             |
+| Use as little cycles as possible: use faster operations like multiplication instead of division |
+
 # Check for zero bytes
 |           |                                                                     |
 | --------- | ------------------------------------------------------------------- |
